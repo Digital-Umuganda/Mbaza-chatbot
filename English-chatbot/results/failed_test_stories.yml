@@ -1,0 +1,19 @@
+version: "2.0"
+stories:
+- story: close and end/restart session when user utters an inappropriate message (.\tests\test_stories.yml)
+  steps:
+  - intent: inappropriate  # predicted: bot_challenge: are you crazy?
+  - action: action_restart  # predicted: utter_prevention
+  - intent: inappropriate  # predicted: nlu_fallback: are you foolish?
+  - action: action_restart  # predicted: utter_prevention
+- story: show covid statistics (.\tests\test_stories.yml)
+  steps:
+  - intent: statistics
+    entities:
+    - disease: covid
+    - GPE: world
+  - action: action_check_statistics
+  - intent: statistics
+    entities:
+    - disease: covid 19
+  - action: action_check_statistics

@@ -1,0 +1,110 @@
+version: "2.0"
+
+stories:
+
+- story: say ok when user affirms after utter_did_that_help
+  steps:
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ok
+
+- story: say sorry and ask what else when user denies after utter_did_that_help
+  steps:
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_whatelse
+
+- story: check covid statistics
+  steps:
+  - intent: statistics
+  - action: action_check_statistics
+
+- story: show covid symptoms
+  steps:
+  - intent: symptoms
+  - action: utter_symptoms
+
+- story: show covid prevention measures
+  steps:
+  - intent: prevention
+  - action: utter_prevention
+
+- story: show fines and penalties
+  steps:
+  - intent: fines_penalties
+  - action: action_check_fines_penalties
+
+- story: "prompt user to choose intended fines_penalties offence"
+  steps:
+  - action: utter_choose_fines_penalties
+  - intent: fines_penalties
+  - action: action_check_fines_penalties
+
+- story: show the covid testing cost
+  steps:
+  - intent: testing_costs
+  - action: utter_testing_costs
+
+- story: show validity of covid testing
+  steps:
+  - intent: testing_validity
+  - action: utter_testing_validity
+
+- story: show covid testing centers in kigali or ask for location
+  steps:
+  - intent: testing_centers
+  - action: action_show_testing_centers
+
+- story: show covid testing centers in kigali when user affirms kigali after utter_within_or_outside_kigali
+  steps:
+  - action: utter_within_or_outside_kigali
+  - intent: testing_centers
+  - action: action_show_testing_centers
+
+# - story: show covid testing centers in kigali when user affirms kigali after utter_within_or_outside_kigali
+#   steps:
+#   - action: utter_within_or_outside_kigali
+#   - intent: affirm_kigali
+#   - action: utter_show_kigali_testing_centers
+
+# - story: show covid testing centers outside kigali when user denies kigali after utter_within_or_outside_kigali
+#   steps:
+#   - action: utter_within_or_outside_kigali
+#   - intent: deny_kigali
+#   - action: utter_show_other_testing_centers
+
+- story: Respond to vaccination schedule
+  steps:
+  - intent: vaccination_schedule
+  - action: utter_vaccination_schedule
+
+- story: Respond to vaccination requirements
+  steps:
+  - intent: vaccination_requirement
+  - action: utter_vaccination_requirement
+
+- story: show testing procedures
+  steps:
+  - intent: testing_procedures
+  - action: utter_testing_procedures
+
+- story: show if a location is under lockdown or not
+  steps:
+  - intent: lockdown
+  - action: action_check_lockdown
+
+- story: show if a location is under lockdown or not after user specifies location
+  steps:
+  - action: utter_ask_location
+  - intent: specify_location
+  - action: action_check_lockdown
+
+- story: show instructions when user inquire about possiblity of treating covid at home 
+  steps:
+  - intent: homebased_care
+  - action: utter_homebased_care
+
+- story: show instructions to covid patient (being treated at home) on what to do when their condition gets worsen
+  steps:
+  - intent: homebased_care_escalation
+  - action: utter_homebased_care_escalation

@@ -1,0 +1,473 @@
+$colorPrimary: #673de6;
+$colorMain: #252d40;
+$colorSecondary: #979fb4;
+
+$backgroundColor: white;
+// $chromeColor: #a8113c;
+$chromeColor2: #f4f7f9;
+$chromeColor3: grey;
+$bubbleColor: #eceff7;
+$bubbleColorUser: $colorPrimary;
+$bubbleshadowColor: #b5b5b5;
+$textColor: $colorMain;
+$linkColor: #3498db;
+
+.chat-container {
+  margin: 100px auto;
+  width: 380px;
+  height: 705px;
+  position: fixed;
+  right: 0;
+  bottom: 82px;
+  margin: 0 20px 20px 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px 1px hsla(0, 0%, 71%, 0.8);
+  border-radius: 10px;
+  // border-bottom-left-radius: 0;
+  // border-bottom-right-radius: 0;
+
+  &.closed {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 800px) {
+  .chat-container {
+    margin: 20px 10px;
+    width: auto;
+  }
+}
+
+@media (max-height: 800px) {
+  .chat-container {
+    margin: 20px 10px;
+    height: 460px;
+
+    &.closed {
+      visibility: hidden;
+    }
+  }
+}
+
+.launcher-container {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px 30px 0;
+  z-index: 100;
+}
+
+.launcher {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: slide-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: slide-in;
+  -moz-animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: slide-in;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorPrimary;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px 1px #b5b5b5;
+  height: 60px;
+  margin-top: 10px;
+  width: 60px;
+  transition: transform 0.25s;
+  cursor: pointer;
+
+  &.closed {
+    transform: rotate(0deg);
+    background-color: $colorPrimary;
+    opacity: 1;
+  }
+
+  &.opened {
+    transform: rotate(-90deg);
+  }
+}
+
+.chatroom {
+  width: 100%;
+  height: 93%;
+  color: $textColor;
+  max-height: 90vh;
+  background-color: $backgroundColor;
+  border: 0px;
+  border-radius: 10px;
+  // border-bottom-left-radius: 0;
+  // border-bottom-right-radius: 0;
+  letter-spacing: normal;
+  overflow: hidden;
+  box-sizing: border-box;
+  // box-shadow: 0 0 0 2px rgba(white, 0.8);
+  font-family: "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial,
+    sans-serif;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &.closed {
+    visibility: hidden;
+  }
+
+  // h3 {
+  //   background-color: $colorPrimary;
+  //   color: #fff;
+  //   margin: 0;
+  //   height: 40px;
+  //   font-weight: 600;
+  //   font-size: 18px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   cursor: pointer;
+  //   display: flex;
+  // }
+
+  .header {
+    background-color: $colorPrimary;
+    color: #fff;
+    margin: 0;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    // cursor: pointer;
+  }
+
+  .header h3 {
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .header img {
+    float: left;
+    width: 55px;
+    padding-left: 10px;
+  }
+
+  .header .hh3 {
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 10px;
+  }
+
+  .chats {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+    height: calc(100% - 80px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .chat {
+      background: $backgroundColor;
+      position: relative;
+      padding: 5px 13px;
+      padding-right: 0;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      line-height: 20px;
+      border-radius: 10px;
+      border-bottom-left-radius: 0;
+      list-style: none;
+      float: left;
+      clear: both;
+      margin: 10px 0 0 0;
+      max-width: 90%;
+
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      &.left {
+        background-image: url("https://res.cloudinary.com/freeman/image/upload/v1622195996/du/bot2.svg");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 40px;
+      }
+
+      &.right {
+        float: right;
+        clear: both;
+        background-color: #fff;
+      }
+
+      .text {
+        word-wrap: break-word;
+      }
+
+      .left {
+        background-color: $bubbleColor;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        // box-shadow: 0 2px 5px 1px hsl(0deg, 0%, 71%);
+        padding: 10px 20px;
+        margin-left: 35px;
+      }
+
+      .right {
+        float: right;
+        clear: both;
+        color: #fff;
+        background-color: $colorPrimary;
+        border-radius: 20px;
+        border-bottom-right-radius: 0;
+        // box-shadow: 0 2px 5px 1px hsl(0deg, 0%, 71%);
+        padding: 10px 20px;
+      }
+
+      &.chat-img {
+        padding: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $linkColor;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding-left: 1.5em;
+      }
+      ul li,
+      ol li {
+        padding-left: 0;
+      }
+
+      &.waiting {
+        margin: 10px 0;
+        background: transparent;
+        padding: 0;
+
+        @keyframes fade {
+          from {
+            opacity: 1;
+          }
+
+          to {
+            opacity: 0.3;
+          }
+        }
+
+        span {
+          font-size: 3.5em;
+          animation-name: fade;
+          animation-duration: 0.8s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease-in-out;
+        }
+        span:nth-child(1) {
+          animation-delay: 0s;
+        }
+        span:nth-child(2) {
+          animation-delay: 0.4s;
+        }
+        span:nth-child(3) {
+          animation-delay: 0.8s;
+        }
+      }
+    }
+
+    .time {
+      list-style: none;
+      clear: both;
+      height: 10px;
+      font-size: 10px;
+      color: $colorSecondary;
+      // color: desaturate($textColor, 50%);
+      margin: 5px 0 20px 0;
+
+      &.left {
+        float: left;
+        margin-left: 50px;
+      }
+      &.right {
+        float: right;
+      }
+    }
+
+    .chat-buttons {
+      position: relative;
+      padding: 0;
+      font-size: 14px;
+      list-style: none;
+      clear: both;
+      margin: 10px 0;
+      text-align: center;
+
+      .chat-button {
+        display: inline-block;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin: 3px;
+
+        background-color: $colorPrimary;
+        color: $chromeColor2;
+        border: 2px solid $chromeColor2;
+        padding: 5px 10px;
+        letter-spacing: normal;
+        border-radius: 5px;
+
+        &:hover,
+        &.chat-button-selected {
+          background-color: rgba($colorPrimary, 0.6);
+          color: $chromeColor2;
+        }
+        &.chat-button-disabled {
+          color: $chromeColor3;
+          border: 2px solid $chromeColor3;
+        }
+      }
+    }
+  }
+
+  .input {
+    // height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    min-height: 56px;
+    max-height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    border-top: 1px solid rgb(230, 230, 230);
+    background-color: $chromeColor2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    textarea {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      color: $textColor;
+      resize: none;
+      border: none;
+      transition: background-color 200ms ease 0s, box-shadow 200ms ease 0s;
+      // outline-offset: -5px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      line-height: 1.33;
+      background-color: rgba(white, 0.8);
+      white-space: pre-wrap;
+      overflow: hidden;
+      overflow-wrap: break-word;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+        background-color: white;
+      }
+    }
+
+    input[type="text"] {
+      background-color: rgba(white, 0.8);
+      outline: 0;
+      border: 1px solid rgba(white, 0.8);
+      border-right: none;
+      color: $textColor;
+      // padding: 0 5px;
+      padding: 18px 0px 18px 15px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      height: 30px;
+      flex: 4;
+      box-sizing: border-box;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+
+      &:focus {
+        box-shadow: none;
+        background-color: white;
+      }
+    }
+
+    input[type="submit"] {
+      display: inline-block;
+      background: $chromeColor2;
+      border: 1px solid rgba(white, 0.8);
+      color: $chromeColor2;
+      height: 30px;
+      min-width: 70px;
+      line-height: 1;
+      text-align: center;
+      padding: 0;
+      font-size: 12px;
+      flex: 1;
+      box-shadow: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      outline: none;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover {
+        background: $bubbleColor;
+      }
+    }
+  }
+
+  #speech-input {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    font-size: 18px;
+    background: $colorPrimary;
+    border: 1px solid $chromeColor2;
+    color: $chromeColor2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: darken($color: $colorPrimary, $amount: 5%);
+    }
+  }
+
+  .vertical-center {
+    vertical-align: middle;
+  }
+}
+
+button:focus {
+  outline: none;
+}

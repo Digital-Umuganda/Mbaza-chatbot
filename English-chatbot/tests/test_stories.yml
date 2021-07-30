@@ -1,0 +1,162 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "2.0"
+
+# Slutation + sendoff
+stories:
+- story: salutation + sendoff
+  steps:
+  - user: |
+      hello there!
+    intent: salutation
+  - action: utter_salutation
+  - action: utter_help
+  - user: |
+      bye
+    intent: sendoff
+  - action: utter_sendoff
+
+# Goodbye / sendoff
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: sendoff
+  - action: utter_sendoff
+
+# Statistics
+- story: show covid statistics
+  steps:
+  - user: |
+      how many [covid]{"entity":"disease"} cases are in the [world]{"entity":"GPE"}
+    intent: statistics
+  - action: action_check_statistics
+  - user: |
+      the [covid 19]{"entity":"disease"} cases in [rwanda]{"entity":"GPE"}
+    intent: statistics
+  - action: action_check_statistics
+
+# Symptoms
+- story: show covid symptoms
+  steps:
+  - user: |
+      hey
+    intent: salutation
+  - action: utter_salutation
+  - action: utter_help
+  - user: |
+      what are the [covid]{"entity":"disease"} symptoms
+    intent: symptoms
+  - action: utter_symptoms
+
+# Prevention
+- story: show covid prevention measures
+  steps:
+  - user: |
+      what are the preventive measures for [covid 19]{"entity":"disease"}?
+    intent: prevention
+  - action: utter_prevention
+  - user: |
+      what are the preventive measures?
+    intent: prevention
+  - action: utter_prevention
+
+# Fines and penalties
+- story: show fines and penalties
+  steps:
+  - user: |
+      what would I pay for [not wearing a mask]{"entity":"offence-mask"}?
+    intent: fines_penalties
+  - action: action_check_fines_penalties
+  - user: |
+      what if I [don't obey curfew]{"entity":"offence-curfew"} rules?
+    intent: fines_penalties
+  - action: action_check_fines_penalties
+  - user: |
+      can I be found [in a bar]{"entity":"offence-bar"}?
+    intent: fines_penalties
+  - action: action_check_fines_penalties
+  - user: |
+      what are the penalties for [unauthorized gatherings]{"entity":"offence-gathering"}?
+    intent: fines_penalties
+  - action: action_check_fines_penalties
+  - user: |
+      what if I [disobey lockdown]{"entity":"offence-lockdown"} rule?
+    intent: fines_penalties
+  - action: action_check_fines_penalties
+  - user: |
+     I don't know the price for [not social distancing]{"entity":"offence-distance"}?
+    intent: fines_penalties
+  - action: action_check_fines_penalties
+
+# Testing cost
+- story: show the covid testing cost
+  steps:
+  - user: |
+      how much should I pay for a [covid 19]{"entity":"disease"} test?
+    intent: testing_costs
+  - action: utter_testing_costs
+  - user: |
+      [covid]{"entity":"disease"} test, how much?
+    intent: testing_costs
+  - action: utter_testing_costs
+
+# Validity
+- story: show validity of covid test
+  steps:
+  - user: |
+      what is the expiry like for [covid]{"entity":"disease"} tests?
+    intent: testing_validity
+  - action: utter_testing_validity
+  - user: |
+      I took a [covid]{"entity":"disease"} tests on monday, I would like to know if it is still valid?
+    intent: testing_validity
+  - action: utter_testing_validity
+
+# Testing centers
+- story: show the covid testing centers
+  steps:
+  - user: |
+      I dont know where to go for [covid]{"entity":"disease"} [testing]{"entity":"service-type"}
+    intent: testing_centers
+  - action: action_show_testing_centers
+  - user: |
+      where can I do a [covid]{"entity":"disease"} [test]{"entity":"service-type"}
+    intent: testing_centers
+  - action: action_show_testing_centers
+
+# Vaccination schedule
+- story: show covid vaccination schedule
+  steps:
+  - user: |
+      in what order will the [vaccination]{"entity":"service-type"} be given?
+    intent: vaccination_schedule
+  - action: utter_vaccination_schedule
+
+# Vaccination requirements
+- story: show covid vaccination requirements
+  steps:
+  - user: |
+      what are the [covid 19]{"entity":"disease"} [vaccination requirement]{"entity":"vaccination-requirement"}?
+    intent: vaccination_requirement
+  - action: utter_vaccination_requirement
+
+# inappropriate
+- story: close and end/restart session when user utters an inappropriate message
+  steps:
+  - user: |
+      are you crazy?
+    intent: inappropriate
+  - action: action_restart
+  - user: |
+      are you foolish?
+    intent: inappropriate
+  - action: action_restart
+
+# Bot challenge
+- story: bot challenge
+  steps:
+  - user: |
+      are you a [bot]{"entity":"operator"}?
+    intent: bot_challenge
+  - action: utter_iamabot

@@ -1,0 +1,631 @@
+version: "2.0"
+nlu:
+- intent: salutation
+  examples: |
+    - hey
+    - hello
+    - hello bot
+    - hi
+    - hello there
+    - hello here
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - helo
+    - Hello
+    - Bite
+    - Hello how are you?
+- intent: sendoff
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - bye bot
+    - goodbye
+    - good bye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - i'm done
+    - i am done
+    - bye-bye!
+    - bye-bye bot
+- intent: statistics
+  examples: |
+    - how many [covid-19](disease) cases are there in the [world](GPE)?
+    - how many [covid](disease) cases are there in the [world](GPE) today?
+    - what is the number of [covid 19](disease) cases we have in the [world](GPE)?
+    - what is the total number of [covid19](disease) cases we have in the [world](GPE)?
+    - [covid-19](disease) statistics in the [world](GPE)
+    - [covid](disease) cases in the [world](GPE)
+    - how many [covid 19](disease) cases are there in Rwanda?
+    - how many [covid19](disease) cases are there today in Rwanda?
+    - what is the number of [covid-19](disease) cases we have in Rwanda?
+    - what is the number of [covid](disease) cases we have in Rwanda today?
+    - what is the [covid 19](disease) statistics?
+    - [covid19](disease) statistics in Rwanda
+    - [covid-19](disease) cases in Rwanda
+    - can you tell me something about the cases?
+    - [covid](disease) stats
+    - [covid](disease) statistics
+    - what are [covid](disease) numbers today
+    - What are the numbers today
+    - how many deaths
+    - how many cases yesterday?
+    - what is the number of cases
+    - case numbers?
+    - do you have information on cases?
+    - Number of [covid](disease) cases in the [world](GPE)
+    - Can I get the [covid](disease) statistics?
+    - what are the [covid](disease) statistics
+    - how many cases today?
+    - What is the number of cases?
+    - what are the number of cases in Rwanda
+- intent: symptoms
+  examples: |
+    - what are the symptoms of [covid-19](disease)?
+    - what are the [covid](disease) symptoms
+    - i have a [cold](symptom), does it mean that i have [covid 19](disease)?
+    - my child has been having a very high [fever](symptom), does he have [covid19](disease)?
+    - i am having [difficulty breathing](symptom), how can I know if I have [covid-19](disease)?
+    - I have a [dry cough](symptom) and a [fever](symptom); does that mean I have [covid](disease)?
+    - do I have [covid 19](disease)?
+    - does my friend have [covid19](disease)?
+    - how do i know that i don't have [covid](disease)?
+    - how can i know if my friend has [covid-19](disease)?
+    - how do i know that my father has [covid](disease)?
+    - how can i tell if my professor has [covid 19](disease)?
+    - how do I know I am infected?
+    - what are the signs of [covid](disease)?
+    - what are some of the [covid-19](disease) signs?
+    - what are the sympotoms?
+    - What are the symptoms of [covid](disease)
+    - am I infected?
+    - do I have [covid](disease)?
+    - am I infected with [covid-19](disease)?
+    - I think am I infected with [covid-19](disease), how do I confirm?
+- intent: prevention
+  examples: |
+    - how can I prevent myself from having [covid-19](disease)?
+    - what can I do to prevent my child who is going to [school](location) from getting [covid](disease)?
+    - I keep seeing the rising number of [covid 19](disease) cases in [rusizi](location) where I live, how can I restrain myself?
+    - how can I prevent myself and my family from getting infected because I hear that the number of [covid19](disease) cases in [kigali](location) is rising sharply
+    - my neighbor has been infected with [covid-19](disease); how can I stop myself from getting infected?
+    - my son is going back to [school](location) this monday I would like to know how he can best avoid himself from getting infected with [covid](disease)?
+    - how do I make sure I dont get [covid 19](disease)?
+    - how can I not get [covid19](disease)?
+    - what do I do to make sure I dont get [covid](disease)?
+    - what are some [covid-19](disease) prevention measures?
+    - how can I avoid getting [covid 19](disease) disease?
+    - how can I avoid my [family] from getting infected with [covid19](disease)?
+    - how can I restrain myself from catching [covid-19](disease)
+    - how can I avoid [covid-19](disease)?
+    - what are some prevention measures?
+    - the preventive measures
+    - some prevention measures
+    - what are the preventive measures?
+    - How to prevent the spread of [covid-19](disease)
+- intent: fines_penalties
+  examples: |
+    - tell me about fines
+    - are there any penalties?
+    - which penalties are there in place?
+    - what are penalties
+    - what is the fine for [mask offences](offence-mask)?
+    - I have been caught [not wearing a mask](offence-mask) correctly in my shop and I am told I should pay fines. What fines should I legally pay?
+    - what is the fine for [not wearing a mask](offence-mask)?
+    - what is the penalty for [not wearing a mask](offence-mask)?
+    - what is the penalty if I [don't wear a mask](offence-mask)?
+    - what is the repercussion for [not wearing a mask](offence-mask)?
+    - what happens if I [don't wear a mask](offence-mask)?
+    - what happens if I am caught [not wearing a mask](offence-mask)?
+    - what do I need to pay for [not having a mask on](offence-mask)?
+    - can I [not wear a mask](offence-mask)?
+    - what happens if I am seen [without a mask](offence-mask)?
+    - what happens if I am found [without a mask](offence-mask)?
+    - what do i pay if i am seen [without a mask](offence-mask)?
+    - what do i pay if i am found [without a mask](offence-mask)?
+    - what am i paying for [not wearing a mask](offence-mask)?
+    - what should i pay if i [don't wear a mask](offence-mask)?
+    - do I have a fine if I [don't have a mask on](offence-mask)?
+    - would I pay if I [don't wear a mask](offence-mask)?
+    - what's the price of [not wearing a mask](offence-mask)?
+    - i don't know how much to pay if I am caught [without a mask](offence-mask)
+    - What will I pay for [not wearing a mask](offence-mask)
+    - what is the fine for [social distancig offences](offence-distance)?
+    - what is the fine for [not social distancing](offence-distance)?
+    - what is the penalty for [not social distancing](offence-distance)?
+    - what is the penalty if I [don't social distance](offence-distance)?
+    - what is the penalty if I [violate social distancing](offence-distance) rules?
+    - what is the repercussion for [not following social distancing](offence-distance)?
+    - what happens if I [don't follow social distance](offence-distance) myself?
+    - what happens if I am caught [not social distancing](offence-distance)?
+    - what do I need to pay for [not obeying social distancing](offence-distance)?
+    - can I [not obey social distancing](offence-distance) rules?
+    - what happens if I am seen [without social distancing](offence-distance)?
+    - what happens if I am found [without social distancing](offence-distance)?
+    - what do i pay if i am seen [without social distancing](offence-distance)?
+    - what do i pay if i am found [without social distancing](offence-distance)?
+    - what am i paying for [not following social distancing](offence-distance) rule?
+    - what should i pay if i [don't social distance](offence-distance)?
+    - do I have a fine if I [don't obey social distance](offence-distance)?
+    - would I pay if I [don't obey social distancing](offence-distance)?
+    - what's the price of [not following social distancing](offence-distance)?
+    - i don't know how much to pay if I am caught [without obeying social distance](offence-distance)
+    - what is the fine for [curfew offences](offence-curfew)?
+    - what is the fine for [violating curfew](offence-curfew) rules?
+    - what is the penalty for [violating curfew](offence-curfew)?
+    - what is the penalty if I [don't obey curfew](offence-curfew)?
+    - what is the penalty if I [violate curfew](offence-curfew) rules?
+    - what is the repercussion for [not following curfew](offence-curfew) myself?
+    - what happens if I am caught [outside during curfew](offence-curfew)?
+    - what do I need to pay for [not obeying curfew](offence-curfew) rules?
+    - can I [not obey curfew hours](offence-curfew) rules?
+    - what happens if I am seen [outside curfew hours](offence-curfew)?
+    - what happens if I am found [outside curfew hours](offence-curfew)?
+    - what do i pay if i am seen [outside curfew hours](offence-curfew)?
+    - what do i pay if i am found [outside curfew hours](offence-curfew)?
+    - what am i paying for [not following curfew](offence-curfew) rule?
+    - what should i pay if i [don't obey curfew](offence-curfew)?
+    - do I have a fine if I [don't obey curfew](offence-curfew)?
+    - would I pay if I am [outside during curfew](offence-curfew) hours?
+    - what's the price of [not following curfew](offence-curfew) rule?
+    - i don't know how much to pay if I am caught [outside during curfew](offence-curfew) hours
+    - what is the fine for [unauthorized gatherings](offence-gathering)?
+    - what is the fine for attending [gatherings not authorized](offence-gathering)?
+    - what is the penalty for [gatherings not permitted](offence-gathering)?
+    - what is the penalty if I [don't obey authorized gathering](offence-gathering) rule?
+    - what is the penalty if I [violate the allowed gathering](offence-gathering) rules?
+    - what is the repercussion for [not following permitted gatherings) rules myself?
+    - what happens if I am caught [in unauthorized gathering](offence-gathering)?
+    - what do I need to pay for [not obeying authorized gathering](offence-gathering) rules?
+    - can I [not obey authorized gathering](offence-gathering) rules?
+    - what happens if I am seen [in gatherings that are not allowed](offence-gathering)?
+    - what happens if I am found [in gatherings that are not allowed](offence-gathering)?
+    - what do i pay if i am seen [in gatherings that are not allowed](offence-gathering)?
+    - what do i pay if i am found [in gatherings that are not allowed](offence-gathering)?
+    - what am i paying for [being in an unauthorized gathering](offence-gathering) rule?
+    - what should i pay if i [don't obey authorized gathering](offence-gathering)?
+    - do I have a fine if I [don't obey authorized gathering](offence-gathering)?
+    - would I pay if I am [outside during curfew](offence-gathering) hours?
+    - what's the price of [not following permitted gatherings](offence-gathering) rule?
+    - i don't know how much to pay if I am caught [in unauthorized gathering](offence-gathering) hours
+    - what is the fine for [lockdown offences](offence-lockdown)?
+    - what is the fine for [violating lockdown](offence-lockdown) rules?
+    - what is the penalty for [violating lockdown](offence-lockdown)?
+    - what is the penalty if I [don't obey lockdown](offence-lockdown)?
+    - what is the penalty if I [violate lockdown](offence-lockdown) rules?
+    - what is the repercussion for [not following lockdown](offence-lockdown) myself?
+    - what happens if I am caught [going to lockdown places](offence-lockdown)?
+    - what do I need to pay for [not obeying lockdown](offence-lockdown) rules?
+    - can I [not obey lockdown](offence-lockdown) rules?
+    - can I [violate lockdown](offence-lockdown) rules?
+    - what happens if I am seen [leaving lockdown areas](offence-lockdown)?
+    - what happens if I am found [leaving lockdown areas](offence-lockdown)?
+    - what do i pay if i am seen [leaving lockdown places](offence-lockdown)?
+    - what do i pay if i am found [leaving lockdown places](offence-lockdown)?
+    - what am i paying for [not following lockdown](offence-lockdown) rule?
+    - what should i pay if i [don't obey lockdown](offence-lockdown)?
+    - do I have a fine if I [don't obey lockdown](offence-lockdown)?
+    - would I pay if I am [going to lockdown places](offence-lockdown)?
+    - what's the price of [not following lockdown](offence-lockdown) rule?
+    - i don't know how much to pay if I am caught [going to lockdown areas](offence-lockdown) hours
+    - what is the fine for being [in a bar](offence-bar)?
+    - what is the fine for [violating bar](offence-bar) rules?
+    - what is the penalty for [violating bar](offence-bar)?
+    - what is the penalty if I [go to the bar](offence-bar)?
+    - what is the penalty if I [violate bar](offence-bar) rules?
+    - what is the repercussion for [being in a bar](offence-bar) myself?
+    - what happens if I am caught [in the bar](offence-bar)?
+    - what do I need to pay for drinking [at the bar](offence-bar) with people?
+    - can I [go to the bar](offence-bar)?
+    - can I [visit the bar](offence-bar)?
+    - what happens if I am seen staying [in the bar](offence-bar)?
+    - what happens if I am found [at the bar](offence-bar)?
+    - what do i pay if i am seen [in a bar](offence-bar)?
+    - what do i pay if i am found [in a bar](offence-bar)?
+    - what am i paying for [being at a bar](offence-bar)?
+    - what should i pay if i [don't obey bar](offence-bar)?
+    - do I have a fine if I drink [at a bar](offence-bar)?
+    - would I pay if I am [going to the bar](offence-bar)?
+    - what's the price of [being at a bar](offence-bar) rule?
+    - i don't know how much to pay if I am caught [at a bar](offence-bar) hours
+- intent: testing_costs
+  examples: |
+    - I would like to know the testing costs for [covid-19](disease)
+    - how much does a [covid](disease) test cost?
+    - what does it cost to do a [covid 19](disease) test?
+    - how much can I do a [covid19](disease) test?
+    - what is the cost for a [covid-19](disease) test?
+    - what is the price of doing a [covid-19](disease) test?
+    - how much is a [covid](disease) test?
+    - what should I pay for [covid 19](disease) testing?
+    - i don't know the testing costs for [covid19](disease)
+    - i'd like to know the price of [covid-19](disease) testing
+    - i'd like to know the cost of testing for [covid](disease)
+    - i'd like to know the amount for testing for [covid](disease)
+    - how much is the [covid 19](disease) test?
+    - what is the price of [covid19] test?
+    - I want to know how much to do [covid-19](disease) test
+    - How much should I pay for a [covid 19](disease) test?
+    - the price of a [covid](disease) test
+    - what is the price of testing?
+    - how much for testing?
+    - i don't know the cost for testing
+    - how much does the test cost?
+    - cost of the test
+- intent: testing_validity
+  examples: |
+    - I would like to know the validity of [covid-19](disease) tests. I want to travel to Amsterdam.
+    - what is the validity of a [covid](disease) test?
+    - how long does a [covid 19](disease) test last for?
+    - how long will it take for a [covid19](disease) test to expire?
+    - what is the expiration of a [covid-19](disease) test?
+    - my [covid](disease) test was last week wednesday, is it still valid?
+    - I don't know if my [covid 19](disease) test is still valid?
+    - I have a [covid19](disease) test, I want to know if it is still valid
+    - I have a [covid-19](disease) test, I want to know if it has expired
+    - how do I know if my [covid](disease) test has expired?
+    - what is the expiry like for [covid 19](disease) test?
+    - what is the expiry date for [covid19](disease) test?
+    - I want to find out when my [covid-19](disease) test will expire
+    - I want to find out when my [covid](disease) test will be invalid
+    - when will my [covid 19](disease) test be invalid?
+    - is my [covid19](disease) test invalid?
+    - has my [covid-19](disease) test expired?
+    - I took a [covid](disease) test. Is it still valid?
+    - What's the expiry like for [covid 19](disease) tests
+    - What's the expiry of a [covid](disease) test
+    - I took a [covid 19](disease) test on monday, I would like to know if it is still valid?
+    - I took a [covid19](disease) test last week, is it still valid?
+
+- intent: testing_centers
+  examples: |
+    - I am in [kigali](location), where can I go to get a [covid-19](disease) [test](service-type)?
+    - where can I do a [covid](disease) [testing](service-type)?
+    - where can I do a [covid](disease) [test](service-type) in [rusizi](location)?
+    - where can I do some [covid](disease) [testing](service-type) in [kigali](location)?
+    - where can I go for a [covid 19](disease) [test](service-type)?
+    - I based in [Rubavu](location), and I will like to do a [covid19](disease) [test](service-type). where can I do it?
+    - I want to do a [covid-19](disease) [test](service-type), what are the testing centers?
+    - I want to do a [covid](disease) [test](service-type), where can I do it?
+    - What are the recommended [test](service-type) centers for [covid 19](disease)?
+    - What are the available [test](service-type) centers for [covid19](disease)?
+    - What are the recommended places for [covid-19](disease) [test](service-type)?
+    - I am looking for a [covid](disease) [testing](service-type) center in [Gisenyi](location)
+    - can you tell me where I can do a [covid 19](disease) [test](service-type) in [Kigali](location)
+    - I want to do a [covid19](disease) [test](service-type)
+    - I want to do a [covid-19](disease) [test](service-type) in kigali, where do I go?
+    - I am located at [musanze](location) and I want to do a [covid 19](disease) [test](service-type)
+    - I don't know where to [test](service-type) for [covid](disease)
+    - I don't know where to go if I want to [test](service-type) for [covid](disease) in [kigali](location)
+    - I don't know where they do [covid 19](disease) tests out of [kigali](location)
+    - I don't know where they do [covid 19](disease) tests outside [kigali](location)
+    - I don't know where they do [covid 19](disease) [tests](service-type) in [Kigali](location)
+    - I don't know where they do [covid 19](disease) [tests](service-type)
+    - I don't know where to go for a [covid](disease) [test](service-type)
+    - where can I do a [covid-19](disease) [test](service-type)?
+
+- intent: vaccination_schedule
+  examples: |
+    - I would like to know [when](vaccination-schedule) I can get [vaccinated](service-type)
+    - I would like to know [when](vaccination-schedule) I can get [covid-19](disease) [vaccination](service-type)?
+    - what is the [covid](disease) [vaccination schedule](vaccination-schedule)?
+    - can I know what the [covid 19](disease) [vaccination schedule](vaccination-schedule) is like?
+    - what is the order in which people will get [vaccinated](service-type)?
+    - what will be the [vaccination](service-type) order?
+    - what is the order of [vaccination](service-type)?
+    - how will they start [vaccinating](service-type) people?
+    - when will I be [vaccinated](service-type)?
+    - what is the way we will get [vaccinated](service-type)?
+    - i don't know [how](vaccination-schedule) we will be [vaccinated](service-type)
+    - I don't know the [covid-19](disease) [vaccine](service-type) schedule
+    - how is the [vaccination](service-type) going to be?
+    - in what order will the [vaccination](service-type) be carried out?
+    - how are we going to take the [vaccine](service-type)?
+    - how will we take the [vaccination](service-type)?
+    - what kind of order will people take the [vaccine](service-type)
+    - what is the way to [vaccinate](service-type) the public
+    - How will I get [vaccinated](service-type)
+- intent: vaccination_requirement
+  examples: |
+    - I am 70 years old; I live in Rubavu, I would like to know [what I have to do](vaccination-requirement) to get [vaccinated](service-type)
+    - what is the [covid](disease) [vaccination requirement](vaccination-requirement)?
+    - what is the [vaccination requirement](vaccination-requirement)?
+    - what are the [vaccination requirements](vaccination-requirement)?
+    - can I know what the [covid 19](disease) [vaccination requirement](vaccination-requirement) is like?
+    - can I know what the [vaccination requirement](vaccination-requirement) is like?
+    - what is the [required way](vaccination-requirement) to get a covid19 [vaccination](service-type)?
+    - what is the [required method](vaccination-requirement) to get [vaccinated](service-type)?
+    - [what do i do](vaccination-requirement) to get the [vaccination](service-type)?
+    - what is the [requirement](vaccination-requirement) for covid-19 [vaccination](service-type)?
+    - what is the [requirement](vaccination-requirement) to get [vaccinated](service-type)?
+    - i don't know the [requirements](vaccination-requirement) for [vaccinating](service-type) people
+    - i don't know what is [required](vaccination-requirement) to take take the [vaccine](service-type)
+    - what is [needed](vaccination-requirement) for covid [vaccination](service-type)?
+    - [what do i need](vaccination-requirement) to get the covid 19 [vaccine](service-type)?
+    - [what am I supposed to do](vaccination-requirement) to get [covid19](disease) [vaccine](service-type)?
+    - What's the [requirement](vaccination-requirement) for [vaccination](service-type)?
+    - what are the [covid 19](disease) [vaccination requirement](vaccination-requirement)?
+    - what are the [requirements](vaccination-requirement) for covid-19 (vaccine)[service-type]
+
+- intent: testing_procedures
+  examples: |
+    - I don't know the [testing procedures](testing-requirement)
+    - I would like to know [how I can get tested](testing-requirement)
+    - [how can I get tested](testing-requirement)?
+    - [how can I be tested](testing-requirement)?
+    - the required [procedures](testing-requirement) for covid [testing](service-type)
+    - what is the [requirement](testing-requirement) for covid-19 [testing](service-type)?
+    - what is the covid [testing requirement](testing-requirement)?
+    - what is the [test requirement](testing-requirement) for covid19?
+    - the [requirement](testing-requirement) for covid 19 [testing](service-type)?
+    - [what do i do](testing-requirement) to get the PCR [test](service-type)?
+    - I don't know [how to get](testing-requirement) the covid [test](service-type)
+    - I don't know [how to get](testing-requirement) the PCR [test](service-type)
+    - [how do I get](testing-requirement) the PCR [test](service-type)?
+    - [how am I supposed to get](testing-requirement) the PCR [test](service-type)?
+    - [what am I supposed to do](testing-requirement) to get the covid19 [test](service-type)?
+    - [what do I need](testing-requirement) to get a covid-19 [test](service-type)?
+    - [what do I need](testing-requirement) to do a PCR [test](service-type)?
+
+# - intent: affirm_kigali
+#   examples: |
+#     - kigali
+#     - in kigali
+#     - at kigali
+#     - I am in kigali
+#     - I'm in kigali
+#     - within kigali
+#     - I am within kigali
+#     - inside kigali
+#     - inside of kigali
+#     - I am inside of kigali
+#     - based in kigali
+#     - located in kigali
+#     - Based in Kigali
+#     - I am in Kigali
+#     - Within kigali
+#     - In kigali
+# - intent: deny_kigali
+#   examples: |
+#     - not kigali
+#     - not in kigali
+#     - not at kigali
+#     - I am not in kigali
+#     - I'm not in kigali
+#     - not within kigali
+#     - I am not within kigali
+#     - out of kigali
+#     - outside kigali
+#     - outside of kigali
+#     - I am outside kigali
+#     - Not in Kigali
+#     - Outside kigali
+
+- intent: lockdown
+  examples: |
+    - I would like to know if [kicukiro](location) is under lockdown
+    - I want to travel to [Muhanga](location) next week for a business appointment, is it still under lockdown
+    - I don't know if there is still lockdown
+    - is [Gasabo](location) in a lockdown?
+    - is [kigali](location) under lockdown
+    - [Nyarugenge](location) is in a lockdown?
+    - I wanted to know if [kigali](location) is under lockdown
+    - can I know if [Musanze](location) is in a lockdown
+    - is [Karongi](location) still in lockdown
+    - does [Ngoma](location) still have a lockdown?
+    - is [Huye](location) still experiencing lockdown?
+    - is [Bugesera](location) still having lockdown?
+    - do they still have lockdown in [Rubavu](location)?
+    - do they have lockdown in [Nyanza](location)?
+    - [Rusizi](location) is in a lockdown?
+    - [Rutsiro](location) is still under lockdown?
+    - [Burera](location) have a lockdown?
+    - is [Gicumbi](location) still locked down?
+    - are they having a lockdown in [Nyabihu](location)?
+
+- intent: specify_location
+  examples: |
+    - [Bugesera](location)
+    - [Gatsibo](location)
+    - [Kayonza](location)
+    - [Kirehe](location)
+    - [Ngoma](location)
+    - [Nyagatare](location)
+    - [Rwamagana](location)
+    - [Kigali](location)
+    - [Gasabo](location)
+    - [Kicukiro](location)
+    - [Nyarugenge](location)
+    - [Burera](location)
+    - [Gakenke](location)
+    - [Gicumbi](location)
+    - [Musanze](location)
+    - [Rulindo](location)
+    - [Gisagara](location)
+    - [Huye](location)
+    - [Kamonyi](location)
+    - [Muhanga](location)
+    - [Nyamagabe](location)
+    - [Nyanza](location)
+    - [Nyaruguru](location)
+    - [Ruhango](location)
+    - [Karongi](location)
+    - [Ngororero](location)
+    - [Nyabihu](location)
+    - [Nyamasheke](location)
+    - [Rubavu](location)
+    - [Rutsiro](location)
+    - [Rusizi](location)
+
+- intent: chit_chat
+  examples: |
+    - what is the weather now?
+    - I am hungry
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - what is the square root of 5
+    - I want to know the weather
+    - what is the meaning of life.
+    - Fridge Isn't Running
+    - my tv isn't working
+    - I want a pizza
+    - my washing machine isn't working
+    - what year is it
+    - order a pizza
+    - I want to order a pizza
+    - what is the weather today
+    - what is the weather
+    - what is the time today?
+
+- intent: inappropriate
+  examples: |
+    - you are stupid!
+    - you are mad!
+    - you are crazy!
+    - you are foolish
+    - you must be mad
+    - I think you are crazy
+    - you must be stupid
+    - I think you are stupid
+    - you must be crazy
+    - I think you are mad
+    - stupid bot
+    - crazy bot
+    - you must be foolish
+    - I think you are foolish
+    - foolish bot
+    - mad bot
+
+- intent: homebased_care
+  examples: |
+    - I have been diagnosed with covid-19, can I be treated at home?
+    - if I have covid 19, can I be treated at home?
+    - can I treat covid at home?
+    - can I receive treatment at home?
+    - can I be treated in my home?
+    - I have covid, can I receive treatment at home?
+    - I have covid-19, can I get treatment in my house?
+    - is it possible to get treatment at my home?
+    - is it possible to be treated in the house?
+    - can I be treated of covid-19 at my house?
+
+- intent: homebased_care_escalation
+  examples: |
+    - My husband who is under homebased care has developed serious symptoms, what should I do?
+    - what do I do if I develop serious symptoms while under homebased care?
+    - what am I supposed to do if I have serious symptoms while being treated at home?
+    - what should I do if I see or notice severe symptoms while being treated at home?
+    - I don't know what to do if my condition gets worse while being treated at home
+    - I don't know what I should do if my covid 19 gets worse while self isolating
+    - what if my condition escalates under homebased care
+    - what if my case escalates under while being treated at home
+    - what if my covid escalates under during self isolation
+    - my covid has increased, what do I do?
+    - my condition has increased. what am I supposed to do
+    - my health has gotten worse, what should I do?
+    - I have seen a rise in my covid condition, what am I to do?
+    - I have seen am increase in my covid condition, what am I to do?
+    - I have developed severe symtomps and I am under homebased treatment, what do I do?
+    - I have developed severe covid symtomps and I am taking treatments at home, what do I do?
+    - what do I do, since I started taking treatments at home, my health is getting worse.
+    - what should I do, since I started home care, my condition has worsened.
+    - what do I do, since I started self isolating, my symptoms has worsened.
+    - I think I am not feeling better with this taking treatments at home
+    - I think my covid condition is not getting better in this home treatment
+    - what if I have developed severe symptoms at home during treatment?
+    - do I have to do something if I am really sick during homebased treatment?
+
+- intent: thankyou
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - thank you
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and good bye
+    - Thanks!
+    - Awesome, you are a good bot!
+    - Thanks
+    - Thank you
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yess please
+    - yup
+    - yeah
+    - yes please
+    - yes plz
+    - Sure
+    - Ok
+    - sweet
+    - cool,
+    - yes...
+    - okay
+    - Cool
+    - Great
+    - Yes it did
+    - Yes
+- intent: deny
+  examples: |
+    - no
+    - No
+    - n
+    - never
+    - nah
+    - nope
+    - I don't think so
+    - I don't agree
+    - I am afraid, no
+    - 1'm sorry, no
+    - don't like that
+    - no way
+    - not really
+    - not at all
+    - at all
+    - not exactly
+    - I'm afraid not exactly
+    - I'm sorry, not at all
+    - sorry, no way
+- intent: bot_challenge
+  examples: |
+    - are you a [bot](operator)?
+    - are you a [human](operator)?
+    - am I talking to a [bot](operator)?
+    - am I talking to a [human](operator)?
+    - is this a real [person](operator)?
+    - is this a [bot](operator)?
+    - am I speaking with a [bot](operator)?
+    - am I speaking with a [person](operator)?
+    - are you an [assistan](operator)?
+    - are you [real](operator)?
+    - am I speaking with a [human](operator) operator?
+    - am I on to a [bot](operator) operator?
+    - am I on to a [human](operator) being?
+    - is this a [human](operator) being?
+    - is this an [AI asistant](operator)?
+    - are you a [human](operator) being?
+    - Are you a [bot](operator) or [human](operator)?
+    - who are you?
+    - tell me about yourself
+    - what do you understand?

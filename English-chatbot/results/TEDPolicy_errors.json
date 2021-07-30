@@ -1,0 +1,262 @@
+[
+  {
+    "text": "in what order will the vaccination be given?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 34,
+        "value": "vaccination",
+        "entity": "service-type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what are the covid 19 vaccination requirement?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "covid 19",
+        "entity": "disease"
+      },
+      {
+        "start": 22,
+        "end": 45,
+        "value": "vaccination requirement",
+        "entity": "vaccination-requirement"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "are you a bot?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "bot",
+        "entity": "operator"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "how many covid cases are in the world",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "covid",
+        "entity": "disease"
+      },
+      {
+        "start": 32,
+        "end": 37,
+        "value": "world",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "the covid 19 cases in rwanda",
+    "entities": [
+      {
+        "text": "the covid 19 cases in rwanda",
+        "start": 4,
+        "end": 12,
+        "entity": "disease",
+        "value": "covid 19"
+      },
+      {
+        "text": "the covid 19 cases in rwanda",
+        "start": 22,
+        "end": 28,
+        "entity": "GPE",
+        "value": "rwanda"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what are the covid symptoms",
+    "entities": [
+      {
+        "start": 13,
+        "end": 18,
+        "value": "covid",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what are the preventive measures for covid 19?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 45,
+        "value": "covid 19",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what would I pay for not wearing a mask?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 39,
+        "value": "not wearing a mask",
+        "entity": "offence-mask"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what if I don't obey curfew rules?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 27,
+        "value": "don't obey curfew",
+        "entity": "offence-curfew"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can I be found in a bar?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "in a bar",
+        "entity": "offence-bar"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what are the penalties for unauthorized gatherings?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 50,
+        "value": "unauthorized gatherings",
+        "entity": "offence-gathering"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what if I disobey lockdown rule?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 26,
+        "value": "disobey lockdown",
+        "entity": "offence-lockdown"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I don't know the price for not social distancing?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 48,
+        "value": "not social distancing",
+        "entity": "offence-distance"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "how much should I pay for a covid 19 test?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 36,
+        "value": "covid 19",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "covid test, how much?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "covid",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is the expiry like for covid tests?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 33,
+        "value": "covid",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I took a covid tests on monday, I would like to know if it is still valid?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "covid",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I dont know where to go for covid testing",
+    "entities": [
+      {
+        "start": 28,
+        "end": 33,
+        "value": "covid",
+        "entity": "disease"
+      },
+      {
+        "start": 34,
+        "end": 41,
+        "value": "testing",
+        "entity": "service-type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "where can I do a covid test",
+    "entities": [
+      {
+        "start": 17,
+        "end": 22,
+        "value": "covid",
+        "entity": "disease"
+      },
+      {
+        "start": 23,
+        "end": 27,
+        "value": "test",
+        "entity": "service-type"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

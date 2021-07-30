@@ -1,0 +1,938 @@
+[
+  {
+    "text": "I would like to know if kicukiro is under lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I want to travel to Muhanga next week for a business appointment, is it still under lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.7139462828636169
+    }
+  },
+  {
+    "text": "I don't know if there is still lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is Gasabo in a lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is kigali under lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.8963276743888855
+    }
+  },
+  {
+    "text": "Nyarugenge is in a lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I wanted to know if kigali is under lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9909781217575073
+    }
+  },
+  {
+    "text": "can I know if Musanze is in a lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9589838981628418
+    }
+  },
+  {
+    "text": "is Karongi still in lockdown",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9936009049415588
+    }
+  },
+  {
+    "text": "does Ngoma still have a lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9599669575691223
+    }
+  },
+  {
+    "text": "is Huye still experiencing lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9384440779685974
+    }
+  },
+  {
+    "text": "is Bugesera still having lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "do they still have lockdown in Rubavu?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "do they have lockdown in Nyanza?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Rusizi is in a lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Rutsiro is still under lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9689741134643555
+    }
+  },
+  {
+    "text": "Burera have a lockdown?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is Gicumbi still locked down?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.8244122862815857
+    }
+  },
+  {
+    "text": "are they having a lockdown in Nyabihu?",
+    "intent": "lockdown",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Bugesera",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.3312540352344513
+    }
+  },
+  {
+    "text": "Gatsibo",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "sendoff",
+      "confidence": 0.4251219928264618
+    }
+  },
+  {
+    "text": "Kayonza",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.647659957408905
+    }
+  },
+  {
+    "text": "Kirehe",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.32960957288742065
+    }
+  },
+  {
+    "text": "Ngoma",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.43527594208717346
+    }
+  },
+  {
+    "text": "Nyagatare",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.2689658999443054
+    }
+  },
+  {
+    "text": "Rwamagana",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "statistics",
+      "confidence": 0.2912960946559906
+    }
+  },
+  {
+    "text": "Kigali",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm_kigali",
+      "confidence": 0.6452175378799438
+    }
+  },
+  {
+    "text": "Gasabo",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "sendoff",
+      "confidence": 0.3476976752281189
+    }
+  },
+  {
+    "text": "Kicukiro",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm_kigali",
+      "confidence": 0.3461998701095581
+    }
+  },
+  {
+    "text": "Nyarugenge",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.39837759733200073
+    }
+  },
+  {
+    "text": "Burera",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.25959911942481995
+    }
+  },
+  {
+    "text": "Gakenke",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.2625665068626404
+    }
+  },
+  {
+    "text": "Gicumbi",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.5586370229721069
+    }
+  },
+  {
+    "text": "Musanze",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "testing_centers",
+      "confidence": 0.6899527311325073
+    }
+  },
+  {
+    "text": "Rulindo",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.2959122657775879
+    }
+  },
+  {
+    "text": "Gisagara",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.28918057680130005
+    }
+  },
+  {
+    "text": "Huye",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3101603388786316
+    }
+  },
+  {
+    "text": "Kamonyi",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.39924535155296326
+    }
+  },
+  {
+    "text": "Muhanga",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4135058522224426
+    }
+  },
+  {
+    "text": "Nyamagabe",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "sendoff",
+      "confidence": 0.34068766236305237
+    }
+  },
+  {
+    "text": "Nyanza",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3737918734550476
+    }
+  },
+  {
+    "text": "Nyaruguru",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.40505602955818176
+    }
+  },
+  {
+    "text": "Ruhango",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.41353821754455566
+    }
+  },
+  {
+    "text": "Karongi",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.33273497223854065
+    }
+  },
+  {
+    "text": "Ngororero",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.48716866970062256
+    }
+  },
+  {
+    "text": "Nyabihu",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.32545316219329834
+    }
+  },
+  {
+    "text": "Nyamasheke",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.37609991431236267
+    }
+  },
+  {
+    "text": "Rubavu",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "vaccination_requirement",
+      "confidence": 0.4287583529949188
+    }
+  },
+  {
+    "text": "Rutsiro",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny_kigali",
+      "confidence": 0.26888296008110046
+    }
+  },
+  {
+    "text": "Rusizi",
+    "intent": "specify_location",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3384069800376892
+    }
+  },
+  {
+    "text": "what is the weather now?",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.8536080718040466
+    }
+  },
+  {
+    "text": "I am hungry",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.2876373529434204
+    }
+  },
+  {
+    "text": "I want to order food",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "testing_centers",
+      "confidence": 0.3949357569217682
+    }
+  },
+  {
+    "text": "What is 2 + 2?",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "vaccination_requirement",
+      "confidence": 0.45661550760269165
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.41121014952659607
+    }
+  },
+  {
+    "text": "what is the square root of 5",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "testing_costs",
+      "confidence": 0.27586954832077026
+    }
+  },
+  {
+    "text": "I want to know the weather",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "testing_centers",
+      "confidence": 0.6055293083190918
+    }
+  },
+  {
+    "text": "what is the meaning of life.",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.5985519886016846
+    }
+  },
+  {
+    "text": "Fridge Isn't Running",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.355456680059433
+    }
+  },
+  {
+    "text": "my tv isn't working",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.29795265197753906
+    }
+  },
+  {
+    "text": "I want a pizza",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "testing_centers",
+      "confidence": 0.49054089188575745
+    }
+  },
+  {
+    "text": "my washing machine isn't working",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "statistics",
+      "confidence": 0.22966931760311127
+    }
+  },
+  {
+    "text": "what year is it",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.8733564019203186
+    }
+  },
+  {
+    "text": "order a pizza",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "vaccination_schedule",
+      "confidence": 0.41188934445381165
+    }
+  },
+  {
+    "text": "I want to order a pizza",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "testing_centers",
+      "confidence": 0.48243293166160583
+    }
+  },
+  {
+    "text": "what is the weather today",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "statistics",
+      "confidence": 0.8387250304222107
+    }
+  },
+  {
+    "text": "what is the weather",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.9176234602928162
+    }
+  },
+  {
+    "text": "what is the time today?",
+    "intent": "chit_chat",
+    "intent_prediction": {
+      "name": "statistics",
+      "confidence": 0.8359305262565613
+    }
+  },
+  {
+    "text": "you are stupid!",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.613644003868103
+    }
+  },
+  {
+    "text": "you are mad!",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7608680129051208
+    }
+  },
+  {
+    "text": "you are crazy!",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7928374409675598
+    }
+  },
+  {
+    "text": "you are foolish",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.5336382389068604
+    }
+  },
+  {
+    "text": "you must be mad",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.3162938058376312
+    }
+  },
+  {
+    "text": "I think you are crazy",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.446798175573349
+    }
+  },
+  {
+    "text": "you must be stupid",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.29904478788375854
+    }
+  },
+  {
+    "text": "I think you are stupid",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.38047152757644653
+    }
+  },
+  {
+    "text": "you must be crazy",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.3266983926296234
+    }
+  },
+  {
+    "text": "I think you are mad",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.45811980962753296
+    }
+  },
+  {
+    "text": "stupid bot",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "sendoff",
+      "confidence": 0.29449647665023804
+    }
+  },
+  {
+    "text": "crazy bot",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "sendoff",
+      "confidence": 0.2743019461631775
+    }
+  },
+  {
+    "text": "you must be foolish",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.31137314438819885
+    }
+  },
+  {
+    "text": "I think you are foolish",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.3993195593357086
+    }
+  },
+  {
+    "text": "foolish bot",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4164670407772064
+    }
+  },
+  {
+    "text": "mad bot",
+    "intent": "inappropriate",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.2875257134437561
+    }
+  },
+  {
+    "text": "I have been diagnosed with covid-19, can I be treated at home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.5905365943908691
+    }
+  },
+  {
+    "text": "if I have covid 19, can I be treated at home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.7069687247276306
+    }
+  },
+  {
+    "text": "can I treat covid at home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.31148940324783325
+    }
+  },
+  {
+    "text": "can I receive treatment at home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.3587977886199951
+    }
+  },
+  {
+    "text": "can I be treated in my home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "testing_procedures",
+      "confidence": 0.3679355978965759
+    }
+  },
+  {
+    "text": "I have covid, can I receive treatment at home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.4175246059894562
+    }
+  },
+  {
+    "text": "I have covid-19, can I get treatment in my house?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.3845294713973999
+    }
+  },
+  {
+    "text": "is it possible to get treatment at my home?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "testing_procedures",
+      "confidence": 0.5027542114257812
+    }
+  },
+  {
+    "text": "is it possible to be treated in the house?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "testing_procedures",
+      "confidence": 0.4681687653064728
+    }
+  },
+  {
+    "text": "can I be treated of covid-19 at my house?",
+    "intent": "homebased_care",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.35101038217544556
+    }
+  },
+  {
+    "text": "My husband who is under homebased care has developed serious symptoms, what should I do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.6129803657531738
+    }
+  },
+  {
+    "text": "what do I do if I develop serious symptoms while under homebased care?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.7042550444602966
+    }
+  },
+  {
+    "text": "what am I supposed to do if I have serious symptoms while being treated at home?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.6313860416412354
+    }
+  },
+  {
+    "text": "what should I do if I see or notice severe symptoms while being treated at home?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.6261522173881531
+    }
+  },
+  {
+    "text": "I don't know what to do if my condition gets worse while being treated at home",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "vaccination_requirement",
+      "confidence": 0.30394724011421204
+    }
+  },
+  {
+    "text": "I don't know what I should do if my covid 19 gets worse while self isolating",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.396510511636734
+    }
+  },
+  {
+    "text": "what if my condition escalates under homebased care",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "testing_validity",
+      "confidence": 0.4074537754058838
+    }
+  },
+  {
+    "text": "what if my case escalates under while being treated at home",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "statistics",
+      "confidence": 0.5404801964759827
+    }
+  },
+  {
+    "text": "what if my covid escalates under during self isolation",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "fines_penalties",
+      "confidence": 0.6000210642814636
+    }
+  },
+  {
+    "text": "my covid has increased, what do I do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.6564167737960815
+    }
+  },
+  {
+    "text": "my condition has increased. what am I supposed to do",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "vaccination_requirement",
+      "confidence": 0.37279757857322693
+    }
+  },
+  {
+    "text": "my health has gotten worse, what should I do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.381425142288208
+    }
+  },
+  {
+    "text": "I have seen a rise in my covid condition, what am I to do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.6405714750289917
+    }
+  },
+  {
+    "text": "I have seen am increase in my covid condition, what am I to do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.6066815257072449
+    }
+  },
+  {
+    "text": "I have developed severe symtomps and I am under homebased treatment, what do I do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.498436838388443
+    }
+  },
+  {
+    "text": "I have developed severe covid symtomps and I am taking treatments at home, what do I do?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.5672808289527893
+    }
+  },
+  {
+    "text": "what do I do, since I started taking treatments at home, my health is getting worse.",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.45942452549934387
+    }
+  },
+  {
+    "text": "what should I do, since I started home care, my condition has worsened.",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "statistics",
+      "confidence": 0.39038845896720886
+    }
+  },
+  {
+    "text": "what do I do, since I started self isolating, my symptoms has worsened.",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.7579437494277954
+    }
+  },
+  {
+    "text": "I think I am not feeling better with this taking treatments at home",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.46936967968940735
+    }
+  },
+  {
+    "text": "I think my covid condition is not getting better in this home treatment",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "prevention",
+      "confidence": 0.5778007507324219
+    }
+  },
+  {
+    "text": "what if I have developed severe symptoms at home during treatment?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.7504042387008667
+    }
+  },
+  {
+    "text": "do I have to do something if I am really sick during homebased treatment?",
+    "intent": "homebased_care_escalation",
+    "intent_prediction": {
+      "name": "symptoms",
+      "confidence": 0.3362884819507599
+    }
+  }
+]

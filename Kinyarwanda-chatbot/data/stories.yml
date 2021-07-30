@@ -1,0 +1,62 @@
+version: "2.0"
+
+stories:
+
+- story: say ok when user affirms after utter_did_that_help
+  steps:
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ok
+
+- story: say sorry and ask what else when user denies after utter_did_that_help
+  steps:
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_whatelse
+
+- story: check covid statistics_local
+  steps:
+  - intent: statistics_local
+  - action: action_check_statistics
+  - action: utter_did_that_help
+
+- story: check covid statistics_global
+  steps:
+  - intent: statistics_global
+  - action: action_check_statistics
+  - action: utter_did_that_help
+
+- story: show covid symptoms
+  steps:
+  - intent: symptoms
+  - action: utter_symptoms
+
+- story: show testing procedures
+  steps:
+  - intent: testing_procedures
+  - action: utter_testing_procedures
+
+- story: look up vaccination schedule
+  steps:
+  - intent: vaccination_general
+  - action: utter_vaccination_general
+
+- story: look up vaccination vulnerable groups
+  steps:
+  - intent: vaccination_vulnerable
+  - action: utter_vaccination_vulnerable
+
+- story: look up testing center in kigali
+  steps:
+  - intent: testing_centers
+  - action: utter_testing_centers
+
+- story: look up testing costs
+  steps:
+  - intent: testing_costs
+  - action: utter_testing_costs
+
+- story: look up test validity
+  steps:
+  - intent: testing_validity
+  - action: utter_testing_validity

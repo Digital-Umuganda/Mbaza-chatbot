@@ -1,0 +1,40 @@
+version: "2.0"
+
+rules:
+
+- rule: salutation
+  steps:
+  - intent: salutation
+  - action: utter_salutation
+  - action: utter_help
+  
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: action_two_stage_fallback
+  - active_loop: action_two_stage_fallback
+
+- rule: answer chit-chat / out-of-scope
+  steps:
+  - intent: chit_chat
+  - action: utter_out_of_scope
+
+- rule: end session whenever a user sends an inappropriate message
+  steps:
+  - intent: inappropriate
+  - action: action_restart
+
+- rule: thankyou
+  steps:
+  - intent: thankyou
+  - action: utter_youwelcome
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: sendoff
+  - action: utter_sendoff
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

@@ -1,0 +1,1499 @@
+[
+  {
+    "text": "would I pay if I am outside during curfew hours?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 41,
+        "value": "outside during curfew",
+        "entity": "offence-curfew"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-gathering",
+        "start": 20,
+        "end": 41,
+        "confidence_entity": 0.5676759481430054,
+        "value": "outside during curfew",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I would like to know if kicukiro is under lockdown",
+    "entities": [
+      {
+        "start": 24,
+        "end": 32,
+        "value": "kicukiro",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 33,
+        "end": 35,
+        "confidence_entity": 0.7152621150016785,
+        "value": "is",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 42,
+        "end": 50,
+        "confidence_entity": 0.9111426472663879,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to travel to Muhanga next week for a business appointment, is it still under lockdown",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "Muhanga",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 28,
+        "end": 37,
+        "confidence_entity": 0.5163499116897583,
+        "value": "next week",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 42,
+        "end": 43,
+        "confidence_entity": 0.7161771059036255,
+        "value": "a",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 44,
+        "end": 52,
+        "confidence_entity": 0.7897855639457703,
+        "value": "business",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 53,
+        "end": 64,
+        "confidence_entity": 0.4773615598678589,
+        "value": "appointment",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 66,
+        "end": 77,
+        "confidence_entity": 0.5742219686508179,
+        "value": "is it still",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 84,
+        "end": 92,
+        "confidence_entity": 0.9814251661300659,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don't know if there is still lockdown",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.9930691719055176,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Gasabo in a lockdown?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 9,
+        "value": "Gasabo",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.9710757732391357,
+        "value": "in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.8934359550476074,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is kigali under lockdown",
+    "entities": [
+      {
+        "start": 3,
+        "end": 9,
+        "value": "kigali",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 16,
+        "end": 24,
+        "confidence_entity": 0.9944323897361755,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nyarugenge is in a lockdown?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Nyarugenge",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 14,
+        "end": 27,
+        "confidence_entity": 0.527141273021698,
+        "value": "in a lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I wanted to know if kigali is under lockdown",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "kigali",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9339315891265869,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can I know if Musanze is in a lockdown",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "Musanze",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.9987350106239319,
+        "value": "Musanze",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 25,
+        "end": 38,
+        "confidence_entity": 0.9731526374816895,
+        "value": "in a lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Karongi still in lockdown",
+    "entities": [
+      {
+        "start": 3,
+        "end": 10,
+        "value": "Karongi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9874744415283203,
+        "value": "in lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "does Ngoma still have a lockdown?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "Ngoma",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 24,
+        "end": 32,
+        "confidence_entity": 0.9811336994171143,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Huye still experiencing lockdown?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 7,
+        "value": "Huye",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 14,
+        "end": 35,
+        "confidence_entity": 0.7443481683731079,
+        "value": "experiencing lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Bugesera still having lockdown?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 11,
+        "value": "Bugesera",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.8494067788124084,
+        "value": "having lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do they still have lockdown in Rubavu?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 37,
+        "value": "Rubavu",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.9644181132316589,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 28,
+        "end": 30,
+        "confidence_entity": 0.9840438961982727,
+        "value": "in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 31,
+        "end": 37,
+        "confidence_entity": 0.8597878813743591,
+        "value": "Rubavu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do they have lockdown in Nyanza?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "Nyanza",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.8509669899940491,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 22,
+        "end": 31,
+        "confidence_entity": 0.4836997389793396,
+        "value": "in Nyanza",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Rusizi is in a lockdown?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Rusizi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.5336936116218567,
+        "value": "Rusizi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 10,
+        "end": 23,
+        "confidence_entity": 0.6530424356460571,
+        "value": "in a lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Rutsiro is still under lockdown?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Rutsiro",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.996383547782898,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Burera have a lockdown?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Burera",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 14,
+        "end": 22,
+        "confidence_entity": 0.9913470149040222,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Gicumbi still locked down?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 10,
+        "value": "Gicumbi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.7474002242088318,
+        "value": "down",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "are they having a lockdown in Nyabihu?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 37,
+        "value": "Nyabihu",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offence-lockdown",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.5982354283332825,
+        "value": "having",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 18,
+        "end": 26,
+        "confidence_entity": 0.830833375453949,
+        "value": "lockdown",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-lockdown",
+        "start": 27,
+        "end": 37,
+        "confidence_entity": 0.38008248805999756,
+        "value": "in Nyabihu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bugesera",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Bugesera",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Gatsibo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Gatsibo",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Kayonza",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Kayonza",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Kirehe",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Kirehe",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ngoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Ngoma",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyagatare",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Nyagatare",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Rwamagana",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Rwamagana",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Kigali",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Kigali",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Gasabo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Gasabo",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Kicukiro",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Kicukiro",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyarugenge",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Nyarugenge",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Burera",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Burera",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Gakenke",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Gakenke",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Gicumbi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Gicumbi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Rulindo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Rulindo",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Gisagara",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Gisagara",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Huye",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Huye",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Kamonyi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Kamonyi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Muhanga",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Muhanga",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyamagabe",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Nyamagabe",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyanza",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Nyanza",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyaruguru",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Nyaruguru",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ruhango",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Ruhango",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Karongi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Karongi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ngororero",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Ngororero",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyabihu",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Nyabihu",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nyamasheke",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Nyamasheke",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Rutsiro",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Rutsiro",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Rusizi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Rusizi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is 2 + 2?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 8,
+        "end": 9,
+        "confidence_entity": 0.9926108717918396,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 12,
+        "end": 13,
+        "confidence_entity": 0.9971957206726074,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what is the square root of 5",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 27,
+        "end": 28,
+        "confidence_entity": 0.9972057938575745,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "you are mad!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "operator",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.3234306871891022,
+        "value": "mad",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "you are crazy!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.6952527165412903,
+        "value": "crazy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think you are mad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-mask",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.6150035858154297,
+        "value": "mad",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "stupid bot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "operator",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.8875238299369812,
+        "value": "bot",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "crazy bot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "operator",
+        "start": 6,
+        "end": 9,
+        "confidence_entity": 0.9824537634849548,
+        "value": "bot",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mad bot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "operator",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.93007892370224,
+        "value": "bot",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have been diagnosed with covid-19, can I be treated at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9997596144676208,
+        "value": "covid-19",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "if I have covid 19, can I be treated at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9989001750946045,
+        "value": "covid 19",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can I treat covid at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.9994451403617859,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can I receive treatment at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 14,
+        "end": 23,
+        "confidence_entity": 0.625677764415741,
+        "value": "treatment",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can I be treated in my home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.2936270236968994,
+        "value": "treated",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service-type",
+        "start": 23,
+        "end": 27,
+        "confidence_entity": 0.5081989169120789,
+        "value": "home",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have covid, can I receive treatment at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9993388056755066,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have covid-19, can I get treatment in my house?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.9999120235443115,
+        "value": "covid-19",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is it possible to get treatment at my home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 6,
+        "end": 34,
+        "confidence_entity": 0.2500251233577728,
+        "value": "possible to get treatment at",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service-type",
+        "start": 38,
+        "end": 42,
+        "confidence_entity": 0.3642697036266327,
+        "value": "home",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is it possible to be treated in the house?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 6,
+        "end": 28,
+        "confidence_entity": 0.5964747071266174,
+        "value": "possible to be treated",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can I be treated of covid-19 at my house?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.999916672706604,
+        "value": "covid-19",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what am I supposed to do if I have serious symptoms while being treated at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.5942872762680054,
+        "value": "supposed",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "vaccination-requirement",
+        "start": 22,
+        "end": 24,
+        "confidence_entity": 0.5762906670570374,
+        "value": "do",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-bar",
+        "start": 58,
+        "end": 71,
+        "confidence_entity": 0.65,
+        "value": "being treated",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-bar",
+        "start": 72,
+        "end": 79,
+        "confidence_entity": 0.20119354128837585,
+        "value": "at home",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what should I do if I see or notice severe symptoms while being treated at home?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-gathering",
+        "start": 64,
+        "end": 71,
+        "confidence_entity": 0.5871449708938599,
+        "value": "treated",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-bar",
+        "start": 72,
+        "end": 74,
+        "confidence_entity": 0.48214685916900635,
+        "value": "at",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don't know what to do if my condition gets worse while being treated at home",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-bar",
+        "start": 57,
+        "end": 78,
+        "confidence_entity": 0.39734625816345215,
+        "value": "being treated at home",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don't know what I should do if my covid 19 gets worse while self isolating",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.999579131603241,
+        "value": "covid 19",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what if my covid escalates under during self isolation",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.99941086769104,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-gathering",
+        "start": 33,
+        "end": 39,
+        "confidence_entity": 0.7028703093528748,
+        "value": "during",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "my covid has increased, what do I do?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 3,
+        "end": 8,
+        "confidence_entity": 0.9998358488082886,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "my condition has increased. what am I supposed to do",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 3,
+        "end": 26,
+        "confidence_entity": 0.5791142582893372,
+        "value": "condition has increased",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "testing-requirement",
+        "start": 28,
+        "end": 46,
+        "confidence_entity": 0.8172740340232849,
+        "value": "what am I supposed",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "vaccination-requirement",
+        "start": 50,
+        "end": 52,
+        "confidence_entity": 0.7258123755455017,
+        "value": "do",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have seen a rise in my covid condition, what am I to do?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 25,
+        "end": 30,
+        "confidence_entity": 0.9993913173675537,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have seen am increase in my covid condition, what am I to do?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.999530553817749,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have developed severe symtomps and I am under homebased treatment, what do I do?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.5065491199493408,
+        "value": "developed",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "vaccination-requirement",
+        "start": 69,
+        "end": 73,
+        "confidence_entity": 0.4671388268470764,
+        "value": "what",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have developed severe covid symtomps and I am taking treatments at home, what do I do?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "vaccination-requirement",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.4252304136753082,
+        "value": "developed",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.9996477365493774,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "vaccination-requirement",
+        "start": 75,
+        "end": 79,
+        "confidence_entity": 0.6213485598564148,
+        "value": "what",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what do I do, since I started taking treatments at home, my health is getting worse.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "testing-requirement",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.3353523313999176,
+        "value": "since",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what should I do, since I started home care, my condition has worsened.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GPE",
+        "start": 62,
+        "end": 70,
+        "confidence_entity": 0.5553752183914185,
+        "value": "worsened",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what do I do, since I started self isolating, my symptoms has worsened.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GPE",
+        "start": 62,
+        "end": 70,
+        "confidence_entity": 0.7716631293296814,
+        "value": "worsened",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think I am not feeling better with this taking treatments at home",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-mask",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.2805703580379486,
+        "value": "not",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "offence-gathering",
+        "start": 49,
+        "end": 59,
+        "confidence_entity": 0.5017448663711548,
+        "value": "treatments",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think my covid condition is not getting better in this home treatment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.999553382396698,
+        "value": "covid",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service-type",
+        "start": 62,
+        "end": 71,
+        "confidence_entity": 0.3543115556240082,
+        "value": "treatment",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what if I have developed severe symptoms at home during treatment?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-gathering",
+        "start": 49,
+        "end": 55,
+        "confidence_entity": 0.5524619817733765,
+        "value": "during",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do I have to do something if I am really sick during homebased treatment?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "offence-curfew",
+        "start": 46,
+        "end": 52,
+        "confidence_entity": 0.5485192537307739,
+        "value": "during",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

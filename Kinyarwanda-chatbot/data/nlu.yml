@@ -1,0 +1,144 @@
+version: "2.0"
+
+nlu:
+- intent: salutation
+  examples: |
+    - muraho ?
+    - amahoro !
+    - mwiriwe ?
+    - mwaramutse 
+    - salama!
+    - bite
+    - mukomere
+    - bwakeye
+
+
+- intent: sendoff
+  examples: |
+    - turasubire
+    - tuzasubira
+    - nahubutaha
+    - ijoro ryiza
+    - umunsi mwiza
+    - mwirirwe
+    - narangije
+    - nasoje
+    - murabeho
+
+
+- intent: statistics_local
+  examples: |
+    - ni kese zingahe za  [covid-19](disease) muri [kigali](location)?
+    - habonetse abarwayi bangahe ba [kovide](disease) [uyu munsi](time) mu [rwanda](location)
+    - mu [rwanda](location) handuye bangahe [uyu munsi](time)
+
+- intent: statistics_global
+  examples: |
+    - ni abantu bangahe bamaze kwandura [kovide](disease) ku [isi](location)?
+    - ni uwuhe mubare wabamaze kwandura [virusi](disease) ku [isi](location) yose?
+
+
+- intent: symptoms
+  examples: |
+    - ndumva ndwaye [inkorora](disease), naba naranduye [kovide](disease)?
+    - ni ibihe bimenyetso bya [kovide](disease)?
+    - umwana wange afite [umuriro mwinshi](symptom), ubwo ntiyaba yaranduye [kovide19](disease)?
+    - ndi muri [kigali](location) none umwana [arandembanye] (symptom), ubuse yaba afite icyo [icyorezo](disease)?
+    - ndumva ndi [guhumeka nabi](symptom), naba naranduye [kovide-19](disease)?
+
+- intent: thankyou
+  examples: |
+    - murakoze kdi muramuke
+    - murakoze
+    - urakoze
+    - yego urakoze
+    - wakoze
+    - nibyiza, uzi ubwenge!
+    - uri irobo nziza!
+    
+- intent: affirm
+  examples: |
+    - yego
+    - nibyo
+    - birumvikana
+    - nibyo rwose
+    - Ego
+    - eeh !
+    - yigo
+
+
+- intent: deny
+  examples: |
+    - no
+    - hoya
+    - oya
+    - sibyo
+    - wapi
+    - ntibibaho
+    - ntibyumvikana
+    - reka
+    - rekada
+    - hoya se kandi
+    - hoya se kdi! 
+
+  
+
+- intent: bot_challenge
+  examples: |
+    - ese uri irobo?
+    - uri irobo?
+    - ndimo ndavugana na robo?
+    - uri umuntu?
+    - witwa nde?
+    - ndavugana n' umuntu?
+
+- intent: testing_procedures
+  examples: |
+    - [nahuye](event) n' [umuntu](person)  [wanduye](event)  [icyorezo](disease), nashakaga kumenya uko nakwipimisha?
+    - ndakeka mfite [coronavirusi](disease), ni gute nakwipimisha?
+    - gutanga ibizamini bya [corona](disease) bikorwa gute?
+    - ni gute bapima [umuntu](person)  [kovide19](disease)?
+    - ni gute bapima [kovide-19](disease)?
+    - ni gute kamwipimisha?
+    - ni gute bapima abantu [covid19](disease)?
+    - ese nakwipimisha gute?
+    - ese ni gute nakwipimisha [coronavirusi](disease)?
+    - ese nshobora kwipimisha [kovide](disease) niyo naba numva ntarwaye?
+    - ese hari ibizamini byerekana niba umuntu arwaye [korona](disease)?
+    - ese gutanga ibizamini birakunda?
+    
+- intent: vaccination_general
+  examples: |
+    - mfite imyaka [70](age); mba i [rubavu](location) nashakaga kumenya icyo nakora ngo nikingize.
+    - ndashaka kumenya igihe nzakingirirwa?
+    - nibande bari mu kaga, bazakingirwa ryari?
+    - ndashaka kwikingiza?
+    - bakingira bakurikije iki?
+    - ndashaka gufata urukingo rwa [korona](disease)
+
+- intent: vaccination_vulnerable
+  examples: |
+    - mfite imyaka [70](age); mba i [rubavu](location) nashakaga kumenya icyo nakora ngo nikingize.
+    - ndashaka kumenya igihe nzakingirirwa?
+    - nkora akazi kanshyira mu kaga ko kwandura 
+    - ko mfite imyaka [15](age) nabona urukingo?
+    - ese ni gute [abantu](person) [bakuze](senior) bazabona urukingo?
+    - ese ni gute [abantu](person) [bakuze](senior) bakingirwa?
+
+- intent: testing_centers
+  examples: |
+    - ndi muri [kigali](location), ni hehe nakwipimishiriza [covid-19](disease)?
+    - ndi muri [rusizi](location), ni hehe nakwipimishiriza [covid-19](disease)?
+    - nakwipimishiriza hehe [kovide](disease)?
+    - ni akahe [gace](location) nakwipimishirizamo [korona](disease)?
+
+- intent: testing_costs
+  examples: |
+    - [umugore](person) wange arashaka [kujya](event) muri [belgium](country), ese ibipimo bya kovide ni angahe?
+    - [umwana](person) wange arimo  [kwiga](event) muri [canada](country), ibipimo bya  [virusi](disease) ni angahe?
+
+
+- intent: testing_validity
+  examples: |
+    - [ndashaka kujya] (event) muri [amsterdam](location), ndi gusabwa kugira ibisubizo by'ikizamini cya kovide gifite agaciro, nashakaga kumenya agaciro k'ibisubizo.
+    - ni bande barimo gupimwa [corona](disease) [virusi](disease) muri iki gihe?

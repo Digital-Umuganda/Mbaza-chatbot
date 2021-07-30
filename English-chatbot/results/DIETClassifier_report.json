@@ -1,0 +1,129 @@
+{
+  "operator": {
+    "precision": 0.8260869565217391,
+    "recall": 1.0,
+    "f1-score": 0.9047619047619047,
+    "support": 19,
+    "confused_with": {}
+  },
+  "offence-gathering": {
+    "precision": 0.9166666666666666,
+    "recall": 1.0,
+    "f1-score": 0.9565217391304348,
+    "support": 77,
+    "confused_with": {}
+  },
+  "offence-bar": {
+    "precision": 0.8767123287671232,
+    "recall": 1.0,
+    "f1-score": 0.9343065693430657,
+    "support": 64,
+    "confused_with": {}
+  },
+  "service-type": {
+    "precision": 0.9538461538461539,
+    "recall": 1.0,
+    "f1-score": 0.9763779527559054,
+    "support": 62,
+    "confused_with": {}
+  },
+  "offence-lockdown": {
+    "precision": 0.580952380952381,
+    "recall": 1.0,
+    "f1-score": 0.7349397590361446,
+    "support": 61,
+    "confused_with": {}
+  },
+  "disease": {
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "f1-score": 0.9411764705882353,
+    "support": 152,
+    "confused_with": {}
+  },
+  "location": {
+    "precision": 1.0,
+    "recall": 0.3125,
+    "f1-score": 0.47619047619047616,
+    "support": 64,
+    "confused_with": {
+      "offence-lockdown": 2
+    }
+  },
+  "offence-curfew": {
+    "precision": 0.9818181818181818,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.9642857142857142,
+    "support": 57,
+    "confused_with": {
+      "offence-gathering": 3
+    }
+  },
+  "vaccination-schedule": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "vaccination-requirement": {
+    "precision": 0.8936170212765957,
+    "recall": 1.0,
+    "f1-score": 0.9438202247191011,
+    "support": 42,
+    "confused_with": {}
+  },
+  "symptom": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "GPE": {
+    "precision": 0.7777777777777778,
+    "recall": 1.0,
+    "f1-score": 0.8750000000000001,
+    "support": 7,
+    "confused_with": {}
+  },
+  "offence-mask": {
+    "precision": 0.9767441860465116,
+    "recall": 1.0,
+    "f1-score": 0.988235294117647,
+    "support": 84,
+    "confused_with": {}
+  },
+  "offence-distance": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 74,
+    "confused_with": {}
+  },
+  "testing-requirement": {
+    "precision": 0.7341772151898734,
+    "recall": 1.0,
+    "f1-score": 0.8467153284671534,
+    "support": 58,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.8707182320441988,
+    "recall": 0.9437125748502994,
+    "f1-score": 0.9057471264367816,
+    "support": 835
+  },
+  "macro avg": {
+    "precision": 0.8938191838501264,
+    "recall": 0.9506578947368421,
+    "f1-score": 0.9028220955597188,
+    "support": 835
+  },
+  "weighted avg": {
+    "precision": 0.8953832673612306,
+    "recall": 0.9437125748502994,
+    "f1-score": 0.8986718944055261,
+    "support": 835
+  }
+}

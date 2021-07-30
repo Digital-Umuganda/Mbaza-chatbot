@@ -1,0 +1,210 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- salutation:
+    use_entities: true
+- sendoff:
+    use_entities: true
+- statistics:
+    use_entities: true
+- symptoms:
+    use_entities: true
+- prevention:
+    use_entities: true
+- fines_penalties:
+    use_entities: true
+- vaccination_schedule:
+    use_entities: true
+- vaccination_requirement:
+    use_entities: true
+- testing_centers:
+    use_entities: true
+- testing_costs:
+    use_entities: true
+- testing_validity:
+    use_entities: true
+- testing_procedures:
+    use_entities: true
+# - affirm_kigali:
+#     use_entities: true
+# - deny_kigali:
+#     use_entities: true
+- lockdown:
+    use_entities: true
+- chit_chat:
+    use_entities: true
+- inappropriate:
+    use_entities: true
+- homebased_care:
+    use_entities: true
+- homebased_care_escalation:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- specify_location:
+    use_entities: true
+entities:
+- disease
+- symptom
+- GPE
+- location
+- offence-mask
+- offence-distance
+- offence-curfew
+- offence-gathering
+- offence-lockdown
+- offence-bar
+- operator
+- service-type
+- vaccination-schedule
+- vaccination-requirement
+- testing-requirement
+slots: {}
+responses:
+  utter_salutation:
+  - text: |
+      Hello! I am Mbaza 👋!
+      I can answer your COVID related questions.
+  utter_statistics:
+  - text: There are {number} new cases in {location} with a total of {total} cases
+  utter_symptoms:
+  - text: |
+      The most common symptoms of Covid-19 are:
+      - Fever
+      - Tiredness
+      - Dry cough
+      - Aches and pains
+      - Nasal congestion
+      - Runny nose
+      - Sore throat
+      - Diarrhea
+      If you have these symptoms, visit the nearest testing center for a Covid-19 test.
+  utter_prevention:
+  - text: To prevent yourself from getting infected wash your hands frequently, wear a mask and practice social distancing.
+  utter_fines_penalties_mask:
+  - text: All citizens should wear their mask correctly, failure to do so may put you at the risk of infection and may result in a 25,000Frws fine.
+  utter_testing_costs:
+  - text: The PCR testing cost is 60 USD or 57,300 Rwf for incoming passengers and 47,000 for outgoing passengers.
+  utter_testing_validity:
+  - text: A PCR certificate is valid for 120 hours since the test was taken.
+  utter_help:
+  - text: What would you like to know today?
+  utter_within_or_outside_kigali:
+  - buttons:
+    - payload: /testing_centers{{"location":"kigali"}}
+      title: Within Kigali
+    - payload: /testing_centers{{"location":"others"}}
+      title: Outside Kigali
+    text: Are you within kigali or outside kigali?
+  utter_ask_location:
+  - text: What district are you in?
+  utter_location_not_found:
+  - text: Sorry, I think {location} is not a valid district. Please check the location again
+  utter_show_kigali_testing_centers:
+  - text: |
+      Within Kigali:
+      RT-PCR Test:
+        - RBC Gikondo (KK 6 Ave, Kigali) 
+        - Petit Stade (KG 11 Ave, Kigali)
+
+      Rapid Antigen Test:
+        Inquire at your nearest hospital or call 114.
+  utter_show_other_testing_centers:
+  - text: |
+      Outside Kigali:
+      RT-PCR Test: 
+        - Please call 114 to get information on testing centers outside of Kigali. 
+
+      Rapid Antigen Test:
+        Inquire at your nearest hospital or call 114.
+  utter_vaccination_schedule:
+  - text: The vaccination will start with essential workers followed by over 65 as a priority .The detailed schedule will be communicated to you by local government authorities.
+  utter_vaccination_requirement:
+  - text: To get vaccinated, register with the local government authorities in your area, you will receive an SMS informing you about the vaccination center & time
+  utter_testing_procedures:
+  - text: |
+      To get a PCR Covid-19 test:
+      - Book a test on Irembo platform 
+      - Pay for the test $60 or 57,300Frws through mobile money or bank deposit using the Bill ID provided by Irembo
+      - Take the test at the provided test center and time
+
+      You will be given your test ID to track and print your test certificate on RBC website Step,
+      - Enter the test ID number on RBC website to receive your PCR certificate. 
+
+      To get a rapid test, visit public & private hospitals licensed to conduct these tests.
+  utter_fines_penalties_distance:
+  - text: Citizens are encouraged to social distance, failing to leave a distance of 2 meters will result in a fine of 10,000Frws
+  utter_fines_penalties_curfew:
+  - text: Violating curfew hours will result in a 10,000Frws fine
+  utter_fines_penalties_gathering:
+  - text: Attending unauthorized gatherings such as parties will result in a 25,000Frws fine and 200,000Frws fine for the organizer.
+  utter_fines_penalties_lockdown:
+  - text: Going to or leaving lockdown areas will result in a 50,000Frws fine.
+  utter_fines_penalties_bar:
+  - text: Fines for being caught in a bar are 25,000Frws
+  utter_choose_fines_penalties:
+  - buttons:
+    - payload: /fines_penalties{{"offence-mask":"not wearing a mask"}}
+      title: Masks
+    - payload: /fines_penalties{{"offence-distance":"without social distancing"}}
+      title: Social distancing
+    - payload: /fines_penalties{{"offence-curfew":violating curfew"}}
+      title: Curfew
+    - payload: /fines_penalties{{"offence-gathering":"in gatherings that are not allowed"}}
+      title: Unauthorized gathering
+    - payload: /fines_penalties{{"offence-lockdown":"not following lockdown"}}
+      title: Lockdown
+    - payload: /fines_penalties{{"offence-bar":"in a bar"}}
+      title: Bar
+    text: Please choose the offence for which you would like to know.
+  
+  utter_homebased_care:
+  - text: Asymptomatic patient or patients with mild symptoms and patients without preexisting chronic conditions can be admitted in home-based care on their consent
+
+  utter_homebased_care_escalation:
+  - text: The patient should immediately call 114 , a medical team will be dispatched and the patient will be admitted in the treatment centers for close follow up.
+
+  utter_out_of_scope:
+  - text: Sorry, I am not trained to answer to these type of questions. Please ask me anything Covid-19 related.
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_ask_rephrase:
+  - text: I didn't quite understand that. Could you rephrase?
+  utter_default:
+  - text: I'm sorry, I can't help you.
+  utter_restart:
+  - text: Have a good day!.
+  utter_ask_whatelse:
+  - text: |-
+      Sorry I couldn't help you 😞 
+      What else can I help you with?
+  utter_youwelcome:
+  - text: You're welcome 🙂
+  utter_ok:
+  - text: Great! 👍
+  utter_happy:
+  - text: Great, carry on!
+  utter_sendoff:
+  - text: Bye 👋
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- action_check_statistics
+- action_show_testing_centers
+- action_check_fines_penalties
+- action_default_ask_affirmation
+- action_check_lockdown
+forms: {}
+e2e_actions: []

@@ -1,0 +1,153 @@
+version: "2.0"
+
+intents:
+  - salutation
+  - sendoff
+  - statistics_local
+  - statistics_global
+  - symptoms
+  - thankyou
+  - affirm
+  - deny
+  - bot_challenge
+  - nlu_fallback
+  - testing_procedures
+  - vaccination_general
+  - vaccination_vulnerable
+  - testing_centers
+  - testing_costs
+  - testing_validity
+
+entities:
+  - symptom
+  - time
+  - event
+  - age
+  - location
+  - country
+  - disease
+  - person
+  - senior
+  - LOC
+  - hospital
+  - {
+
+    "value" : "disease",
+    "synonyms":[
+      "coronavirusi",
+      "covid",
+      "covid-19",
+      "covid19",
+      "covid 19",
+      "kovide 19",
+      "kovide",
+      "virusi",
+      "corona",
+      "icyorezo",
+      "indwara",
+      "korona"
+    ]
+  }
+
+
+
+slots:
+  number:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  
+  total:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+
+
+responses:
+  utter_salutation:
+  - text: |
+      Muraho! amazina yange ni  Mbaza 👋!
+      mushobora kumbaza ibibazo byose mwibaza kuri Kovide 19.
+
+  utter_statistics_local:
+  - text: "Umubare w'abanduye uyu munsi ni {number}, abamaze kwandura mu gihugu hose ni {number} "
+
+  utter_statistics_global:
+  - text: "Abanduye kovide uyu munsi ku isi  ni {number}, abamaze kwandura bose hamwe ni {number} "
+
+  utter_symptoms:
+  - text: |
+      Ibimenyetso by'ubwandu bwa kovide ni:
+      - Inkorora y'akayi,
+      - Guhumeka nabi,
+      - Umuriro
+      Nimba ufite ibi bimenyetso ihutire kwipimisha ku bitaro bikwegereye.
+        
+  utter_help:
+  - text: "Urashaka kumenya iki uyu munsi?"
+  
+  utter_did_that_help:
+  - text: "Ese hari icyo bigufashijeho cga bikunguye?"
+
+  utter_ask_rephrase:
+  - text: "Ntabwo ndimo kumva neza icyo ushaka kumbaza. ushobora kumbaza mubundi buryo?"
+
+  utter_ask_whatelse:
+  - text: "Mwihanganire kuba ntashoboye kubafasha 😞 \n\nHari ikindi kintu mwaba mwifuza kumenya kuri kovide?"
+  
+  utter_youwelcome:
+  - text: "Murakoze cyane 🙂"
+
+  utter_ok:
+  - text: "Nibyiza! 👍"
+
+  utter_happy:
+  - text: "Nibyiza, twakomeza!"
+
+  utter_sendoff:
+  - text: "Mwirirwe 👋"
+
+  utter_iamabot:
+  - text: "Ndi irobo, ikoranywe ubwenge bw'ubukorano hifashishijwe tekinoroji ya Rasa(soma raza)."
+  utter_testing_procedures:
+    - text: " Kugirango wipimishe:\n
+    - uzuza ibisabwa uciye ku rubuga rw'irembo\n
+    - wishyure amadolari 60 cyangwa 57,300 Frws ukoresheje mobile money cyangwa\n
+        kuri banki wifashishije nomero yo kwishyuriraho wahawe n'Irembo.\n
+        Kora ikizamini ahapimirwa Kovide.\n Urahabwa nomero iranga ikizamini, \n 
+        ushobora guca ku rubuga rwa RBC ukamenya aho ibisubizo byawe bigeze.\n
+        Seritifika y'ibisubizo byawe wayibona uciye ku rubuga rwa RBC ukuzuzamo nomero iranga ikizamini cyawe "
+
+
+  utter_vaccination_general:
+    - text: " Inkingo zitangwa hakurikijwe abazikeneye cyane,  "
+
+  utter_vaccination_vulnerable:
+    - text: "Inkingo zizatangwa hakurikijwe abazikeneye cyane\n
+      abafite hejuru y'imyaka 65 nabakora muri serivisi zibashyira mu kaga\n
+      ko kwandura nibo baherwaho.\n
+      Igihe inkingo zizatangirwa muzabimenyeshwa mwohererezwa ubutumwa."
+
+  utter_testing_centers:
+    - text: "Ahapimirwa kovide muri  kigali ni:\n
+      - petit stade \n
+      - juakali \n
+      - ndetse nibindi bitaro byemewe na RBC."
+  utter_testing_costs:
+    - text: "Igiciro cyo kwipimisha ni:\n
+      - amadolari 60 cyangwa  57,300 Rwf ku bagenzi binjira mu gihugu,\n
+      - 47,000 Rwf ku bagenzi basohoka mu gihugu."
+
+  utter_testing_validity:
+    - text: "Ikizamini cya PCR gifite agaciro k'amasaha 120 kuva igihe uboneye igisubizo ."
+actions:
+  - action_check_statistics
+
+config:
+  store_entities_as_slots: true
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

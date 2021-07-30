@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  rasa:
+    build: 
+      context: .
+      dockerfile: Dockerfile.rasa
+    #volumes:
+      #- /var/lib/rasa/models:/app/models
+      #- ./models:/app/models
+    networks:
+      - infrastructure_default
+
+  rasa-nginx:
+    build: ./rasa-nginx
+    networks:
+      - infrastructure_default
+
+  rasa-actions:
+    build:
+      context: .
+      dockerfile: Dockerfile.actions
+    #volumes:
+    #  - ./rasa-conversational-chatbot-english/actions:/app/actions
+    # ports:
+    #   - "5055:5055" 
+    networks:
+      - infrastructure_default
+
+networks:
+  infrastructure_default: # external network
+    external: true

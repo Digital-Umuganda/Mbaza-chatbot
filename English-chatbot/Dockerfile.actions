@@ -1,0 +1,12 @@
+FROM rasa/rasa-sdk:2.7.0
+
+# The Rasa SDK image runs as non-root user by default. Hence, you have to switch
+# back to the `root` user if you want to install additional dependencies
+
+USER root
+COPY ./actions/ /app/actions
+
+#RUN pip3 install -r ./rasa-conversational-chatbot-english/requirements
+
+# Switch back to a non-root user
+USER 1001

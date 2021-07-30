@@ -1,0 +1,43 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      Muraho neza!
+    intent: greet
+  - action: utter_salutation
+  - user: |
+      ni byiza
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      muraho !
+    intent: greet
+  - action: utter_salutation
+  - user: |
+      ni byiza
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      murabeho!
+    intent: goodbye
+  - action: utter_sendoff
+
+- story: say goodbye
+  steps:
+  - user: |
+      mwirirweho !
+    intent: goodbye
+  - action: utter_sendoff
+
+- story: bot challenge
+  steps:
+  - user: |
+      ese uri irobo ?
+    intent: bot_challenge
+  - action: utter_iamabot

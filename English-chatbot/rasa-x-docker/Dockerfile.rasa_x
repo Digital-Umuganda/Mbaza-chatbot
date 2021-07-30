@@ -1,0 +1,8 @@
+FROM rasa/rasa-x:0.40.0
+
+#COPY ./models /app/models
+COPY ./environments.yml /app/environments.yml
+COPY ./credentials.yml /app/credentials.yml
+COPY ./endpoints.yml /app/endpoints.yml
+#COPY ./logs /logs
+#COPY ./auth /app/auth
